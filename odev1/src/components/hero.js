@@ -10,7 +10,7 @@ import "../App.css"
 
 
 const Section = styled.section`
-  height: 100vh;
+  height: 100%;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ const Hero = () => {
           </motion.p>
           <Button 
           onClick={()=>{
-            setCalcul([...calcul , {weight , size}])
+            setCalcul([ {weight , size}])
           }}
             whileHover={{ scale: 1.05 }}
             whileTap={{
